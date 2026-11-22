@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 320" width="1000" height="320" role="img" aria-label="Ariyan Mondal - Developer and Designer">
+  <defs>
+    <pattern id="grid" width="24" height="24" patternUnits="userSpaceOnUse">
+      <circle cx="1" cy="1" r="1" fill="#30363d"/>
+    </pattern>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#a78bfa"/>
+      <stop offset="1" stop-color="#60a5fa"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="80%" cy="0%" r="70%">
+      <stop offset="0" stop-color="#8b5cf6" stop-opacity=".35"/>
+      <stop offset="1" stop-color="#8b5cf6" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <style>
+    text{font-family:'Segoe UI',system-ui,-apple-system,sans-serif}
+    .mono{font-family:'Cascadia Code','Consolas',ui-monospace,monospace}
+    .cursor{animation:move 7s ease-in-out infinite}
+    @keyframes move{0%,100%{transform:translate(690px,205px)}40%{transform:translate(520px,120px)}70%{transform:translate(760px,95px)}}
+    .blink{animation:blink 1s steps(1) infinite}
+    @keyframes blink{50%{opacity:0}}
+    .rise{animation:rise 1.2s ease-out both}
+    @keyframes rise{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+  </style>
+
+  <rect width="1000" height="320" rx="18" fill="#0d1117"/>
+  <rect width="1000" height="320" rx="18" fill="url(#grid)"/>
+  <rect width="1000" height="320" rx="18" fill="url(#glow)"/>
+  <rect x=".5" y=".5" width="999" height="319" rx="18" fill="none" stroke="#30363d"/>
+
+  <!-- window chrome -->
+  <circle cx="30" cy="28" r="6" fill="#ff5f56"/><circle cx="50" cy="28" r="6" fill="#ffbd2e"/><circle cx="70" cy="28" r="6" fill="#27c93f"/>
+  <text x="500" y="33" text-anchor="middle" class="mono" font-size="13" fill="#8b949e">life.exe — not responding</text>
+
+  <!-- figma-style selection around the name -->
+  <g class="rise">
+    <rect x="60" y="92" width="640" height="92" fill="none" stroke="#8b5cf6" stroke-width="1.5"/>
+    <g fill="#0d1117" stroke="#8b5cf6" stroke-width="1.5">
+      <rect x="55" y="87" width="10" height="10"/><rect x="695" y="87" width="10" height="10"/>
+      <rect x="55" y="179" width="10" height="10"/><rect x="695" y="179" width="10" height="10"/>
+    </g>
+    <text x="80" y="164" font-size="68" font-weight="800" fill="url(#g)">Ariyan Mondal</text>
+    <rect x="60" y="200" width="168" height="22" rx="4" fill="#8b5cf6"/>
+    <text x="144" y="216" text-anchor="middle" class="mono" font-size="12" fill="#fff">640 × 92 · Hug</text>
+  </g>
+
+  <text x="60" y="262" font-size="22" fill="#e6edf3" class="rise">Developer <tspan fill="#8b5cf6">×</tspan> Designer</text>
+  <text x="60" y="292" class="mono" font-size="14" fill="#a3e635">&gt; debugging life<tspan class="blink">_</tspan></text>
+
+  <!-- stack-trace card -->
+  <g class="mono" font-size="12.5">
+    <rect x="640" y="236" width="320" height="62" rx="8" fill="#161b22" stroke="#30363d"/>
+    <text x="656" y="257" fill="#f85149">LifeNotFoundError: retrying…</text>
+    <text x="656" y="275" fill="#8b949e">at Ariyan.learn(fullstack.ts:∞)</text>
+    <text x="656" y="291" fill="#a3e635">✔ coffee.ts passed</text>
+  </g>
+
+  <!-- animated cursor with name tag -->
+  <g class="cursor">
+    <path d="M0 0 L0 18 L5 14 L9 22 L12 20.5 L8 13 L15 13 Z" fill="#a3e635" stroke="#0d1117" stroke-width="1"/>
+    <rect x="14" y="20" width="56" height="20" rx="10" fill="#a3e635"/>
+    <text x="42" y="34" text-anchor="middle" font-size="12" font-weight="700" fill="#0d1117">Ariyan</text>
+  </g>
+</svg>
