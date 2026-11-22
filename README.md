@@ -3,7 +3,7 @@
 </p>
 
 <p align="center">
-  I work where <b>code</b> meets <b>design</b> — building web and app experiences that look good <i>and</i> work well.<br/>
+  I work where <b>code</b> meets <b>design</b> - building web and app experiences that look good <i>and</i> work well.<br/>
   Always learning, always shipping, always one <code>console.log</code> away from a breakthrough.
 </p>
 
